@@ -7,3 +7,5 @@ About this site
 ```{r}
 1 + 1
 ```
+
+Hello my name is Achsah Jojo. I am a Computer Science major and I am the former President of the Women in Computer Science club, ChatGPT ambassador at CSUMB and the Teaching Assistant for Intro to Data Science.
