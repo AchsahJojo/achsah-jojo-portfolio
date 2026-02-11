@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nHello my name is Achsah Jojo. I love going to the gym, I like nature walks, and trying new cafes!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Achsah",
+    "section": "",
+    "text": "Achsah Jojo is a Computer Science major, minoring in Data Science who is also the ChatGPT Ambassador @ OpenAI, Innovation Apple Scholar researcher and an Open Source Contributor."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Achsah",
+    "section": "Education",
+    "text": "Education\nCalifornia State University Monterey Bay | Seaside,CA\nB.S. in Computer Science | 2022 - 2026"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Achsah",
+    "section": "Experience",
+    "text": "Experience\nCalifornia State University, Monterey Bay | Data Science TA | January 2025 - present\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  }
+]
