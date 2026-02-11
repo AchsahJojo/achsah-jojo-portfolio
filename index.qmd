@@ -1,6 +1,27 @@
 ---
-title: "achsah-jojo-portfolio"
+title: "Achsah"
+about:
+  template: jolla
+  image: achsah_pic.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/achsah-jojo-32066a245/
+    - icon: github
+      text: Github
+      href: https://github.com/AchsahJojo
 ---
+
+Achsah Jojo is a Computer Science major, minoring in Data Science who is also the ChatGPT Ambassador \@ OpenAI, Innovation Apple Scholar researcher and an Open Source Contributor.
+
+## Education
+
+**California State University Monterey Bay** \| Seaside,CA\
+B.S. in Computer Science \| 2022 - 2026
+
+## Experience
+
+California State University, Monterey Bay \| Data Science TA \| January 2025 - present
 
 This is a Quarto website.
 
