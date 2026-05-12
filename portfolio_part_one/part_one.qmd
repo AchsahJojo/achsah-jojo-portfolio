@@ -2,6 +2,11 @@
 title: "portfolio_part_one"
 author: "Achsah Jojo"
 format: html
+execute: 
+  echo: false
+  warning: false
+  message: false
+embed-resources: true
 ---
 
 ## Data Description
@@ -161,9 +166,11 @@ animals_clean <- animals |>
 names(animals_clean)
 str(animals_clean)
 ```
+
+
 ```{r}
 #| label: filter_dogs
-#|  eval: false 
+#| eval: false 
 dogs_only <- animals_clean |>
   filter(type == "DOG")
 ```
@@ -184,7 +191,7 @@ dogs <- dogs_only |>
 
 ```{r}
 #| label: identify_na_values
-#|  eval: false 
+#| eval: false 
 # Replace blank values with NA
 dogs <- dogs |>
   mutate(
@@ -200,7 +207,7 @@ dogs <- dogs |>
 
 ```{r}
 #| label: convert_dates
-#|  eval: false 
+#| eval: false 
 dogs <- dogs |>
   mutate(
     date_of_birth = mdy(date_of_birth),
@@ -211,7 +218,7 @@ dogs <- dogs |>
 
 ```{r}
 #| label: remove_duplicate_rows
-#|  eval: false 
+#| eval: false 
 ## Remove duplicate rows
 dogs <- dogs |>
   distinct()
@@ -219,7 +226,7 @@ dogs <- dogs |>
 
 ```{r}
 #| label: adoption_age_season
-#|  eval: false 
+#| eval: false 
 # creates the adoption indicator, age at intake, age groups, month, year, and season.
 
 dogs <- dogs |>
@@ -263,7 +270,7 @@ dogs <- dogs |>
 
 ```{r}
 #| label: fixing_neg_values
-#|  eval: false 
+#| eval: false 
 # replacing negative values with NA
 dogs <- dogs |>
   mutate(
@@ -274,7 +281,7 @@ dogs <- dogs |>
 
 ```{r}
 #| label: intake_outcome_present
-#|  eval: false 
+#| eval: false 
 # Keep the cols and rows needed for analysis
 dogs_clean <- dogs |>
   filter(!is.na(intake_date), !is.na(outcome_type))
@@ -282,7 +289,7 @@ dogs_clean <- dogs |>
 
 ```{r}
 #| label: other_common_breeds 
-#|  eval: false 
+#| eval: false 
 # group less common breeds into "Other"
 dogs_clean <- dogs_clean |>
   mutate(
@@ -292,7 +299,7 @@ dogs_clean <- dogs_clean |>
 
 ```{r}
 #| label: factor_variables
-#|  eval: false 
+#| eval: false 
 dogs_clean <- dogs_clean |>
   mutate(
     size = factor(size, levels = c("TOY", "SMALL", "MED", "LARGE")),
@@ -305,7 +312,7 @@ dogs_clean <- dogs_clean |>
 
 ```{r}
 #| label: cleaned_data
-#|  eval: false 
+#| eval: false 
 ## Save the cleaned data into the clean folder
 write_csv(dogs_clean, "data-clean/dogs_clean.csv")
 ```
