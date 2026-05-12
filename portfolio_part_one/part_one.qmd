@@ -363,11 +363,13 @@ dog_data_clean |>
     alt = "A horizontal bar chart showing the average number of days dogs of different breed groups spend in the Sonoma County Animal Shelter, ordered from longest to shortest stay."
   )
 ```
+> Pitbulls, German Shepherd, and Siberian Husky mix are the three dog breeds that on average spend the longest time in the Sonoma County Animal Shelter, spending over 30 days. It also looks like Labrador retreviers spend the least amount of time in the shelter, spending only less than 10 days on average.
 
 Do factors such as size, age, or intake condition appear to influence adoption outcomes?
 
 ```{r}
 #| label: adoption_rate_by_intake_condition
+
 dog_data_clean |>
   # keep only rows where real data is found
   filter(!is.na(intake_condition)) |>
@@ -389,4 +391,4 @@ dog_data_clean |>
     alt = "A horizontal bar chart showing adoption rates for dogs by their intake condition at the Sonoma County Animal Shelter."
   )
 ```
-
+> Dogs that are marked as treatable/rehab when they enter the Sonoma County Animal Shelter have a 50% adoption rate. This is interesting because it seems like dogs who need treatment are adopted more than dogs that come in healthy. The graph also shows that dogs with untreatable conditions have the lowest adoption rate.
