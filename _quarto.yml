@@ -10,7 +10,7 @@ website:
         text: Home
       - href: about.qmd
         text: "About Me"
-      - href: achsah-jojo-portfolio/portfolio_part_one/part_one.qmd
+      - href: portfolio_part_one/part_one.qmd
         text: "Project"
 
 format:
